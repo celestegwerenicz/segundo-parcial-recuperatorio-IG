@@ -1,1 +1,3 @@
-# segundo-parcial-recuperatorio-IG
+Celeste Werenicz
+Primer Parcial - Informatica General
+Artes multimediales - UNA
