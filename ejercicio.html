@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Laurie Anderson - Ejercicio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+        <link rel="style" href="css/estilo.css">
+    </head>
+
+    <body>
+        <header>
+            <img class="foto-principal" src="img/anderson.jpg" alt="Imagen de Laurie">
+            
+            <div class="titulo">
+                <h1>Laurie Anderson</h1>
+                <p>Performance, tecnología y narración en el arte contemporáneo</p>
+
+                <section>
+                    <q>El lenguaje es un virus que viene del espacio exterior.</q>
+                    <p>- William S. Burroughs<br> 
+                    recurrentemente por Laurie Anderson.<br>
+                    <a href="https://www.goodreads.com/author/quotes/4462369.William_S_Burroughs#:~:text=Language%20is%20a%20virus%20from%20outer%20space" target="_blank">
+                    fuente.</a></p>
+                </section>
+            </div>
+        </header>
+
+        <div>
+            <nav>
+                <ul>
+                    <li class="otra">
+                        <a href="index.html" target="_self">Inicio</a>
+                    </li>
+
+                    <li class="otra">
+                        <a href="galeria.html" target="_self">Galeria</a>
+                    </li>
+
+                    <li class="actual">
+                        <a href="ejercicio.html" target="_self">Ejercicio</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <main>
+                <form id="formDatos">
+                    <fieldset id="paso1">
+                        <label>
+                            Ingresar cantidad de obras: 
+                            <input type="number" id="CO">
+                        </label>
+
+                        <label>
+                            Tiempo de tranferencia por MB: 
+                            <input type="number" id="TT">
+                        </label>
+
+                        <label>
+                            Costo mensual por MB: 
+                            <input type="number" id="CM">
+                        </label>
+                        <button id="S" type="button">Siguiente</button>
+                    </fieldset>
+                    
+                    <fieldset id="paso2" hidden>
+                        <label>
+                            Nombre de la obra: 
+                            <input type="text" id="O">
+                        </label>
+
+                        <label>
+                            Duracion en Minutos: 
+                            <input type="number" id="M">
+                        </label>
+
+                        <label>
+                            Peso en MB: 
+                            <input type="number" id="MB">
+                        </label>
+
+                        <button id="GO" type="button">Guardar Obra</button>
+                        <button id="paso3" type="button" disabled>Calcular</button>
+                    </fieldset>
+                </form>
+            </main>
+
+            <footer> Para contactarse escribir a <a href="mailto:laurie@artedigital.com">laurie@artedigital.com</a> </footer>
+        </div>    
+    </body>
+</html>
