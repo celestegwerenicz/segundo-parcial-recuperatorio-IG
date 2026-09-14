@@ -1,0 +1,290 @@
+body {
+    background-image: url(../img/fondo.png);
+    background-attachment: fixed;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    background-color: rgb(220, 233, 245);
+    display: inline-block;
+    padding: 1rem;
+}
+
+h1, h2{
+    color: rgb(27, 64, 99)
+}
+
+header{
+    text-align: center;
+}
+
+.header-contenido{
+    text-align: left;
+    background-color: rgb(220, 233, 245);
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.foto-principal{
+    max-width: 25rem;
+    height: auto;
+}
+
+.cita{
+    font-size: 2rem;
+}
+
+.EncabezadoInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul{
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  margin-top: 10rem;
+  padding: 0;
+}
+
+nav li{
+	display: inline-block;	
+}
+
+nav a{
+    font-size: 1.5em;
+	line-height: 2.2em;
+	padding: 0.4em 1em;
+	text-align: center;
+	text-decoration: none;
+    padding: 1rem;
+    background-color: rgb(176, 211, 244);
+}
+
+a:link{
+	color: rgb(6, 40, 61);
+}
+a:visited{
+	color: rgb(37, 109, 133);
+}
+a:hover{
+	color: rgb(71, 181, 255);
+}
+a:active{
+	color: rgb(223, 246, 255);
+}
+
+/*ESTILOS PARA INDEX*/
+
+main article {
+    background-color: rgb(220, 233, 245);
+    padding: 1.5rem;
+    flex: 1 1 calc(33.333% - 2rem);
+    line-height: 1.8;
+}
+
+main article h2 {
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+main article p {
+    margin-bottom: 1rem;
+    text-align: justify;
+    color: rgb(27, 64, 99);
+}
+
+main article ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+main article ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgb(176, 211, 244);
+}
+
+main article ul li:last-child {
+    border-bottom: none;
+}
+
+main article ul li p,
+main article ul li a {
+    margin: 0;
+}
+
+/* ==================== GALERÍA - 2 COLUMNAS ==================== */
+
+main {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.obras {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.obras article {
+    background-color: rgb(220, 233, 245);
+    padding: 1rem;
+}
+
+.obras img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.obras iframe {
+    width: 100%;
+}
+
+.obras a {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.obras p {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    color: rgb(27, 64, 99);
+}
+
+.botones {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.botones article {
+    background-color: rgb(220, 233, 245);
+    padding: 1.5rem;
+    border: 2px solid rgb(176, 211, 244);
+}
+
+.botones p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: rgb(27, 64, 99);
+    font-size: 0.95rem;
+}
+
+.botones button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-family: inherit;
+    background-color: rgb(176, 211, 244);
+    color: rgb(6, 40, 61);
+    border: 2px solid rgb(71, 181, 255);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.botones button:hover {
+    background-color: rgb(71, 181, 255);
+    color: white;
+}
+
+.diseno button {
+    background-color: rgb(200, 170, 230);
+    border-color: rgb(170, 140, 200);
+}
+
+.diseno button:hover {
+    background-color: rgb(170, 140, 200);
+    color: white;
+}
+
+/*ejercisio*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+fieldset {
+    border: 2px solid rgb(176, 211, 244);
+    padding: 1.5rem;
+    background-color: rgb(220, 233, 245);
+    border-radius: 0.5rem;
+}
+
+fieldset legend {
+    padding: 0 0.5rem;
+    font-weight: bold;
+    color: rgb(27, 64, 99);
+}
+
+label {
+    display: block;
+    margin-bottom: 1rem;
+    color: rgb(27, 64, 99);
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid rgb(176, 211, 244);
+    border-radius: 0.3rem;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+input:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button {
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-family: inherit;
+    background-color: rgb(176, 211, 244);
+    color: rgb(6, 40, 61);
+    border: 2px solid rgb(71, 181, 255);
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+button:hover:not(:disabled) {
+    background-color: rgb(71, 181, 255);
+    color: white;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    border-color: #999;
+}
+
+footer {
+    background-color: rgb(27, 64, 99);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: rgb(176, 211, 244);
+    text-decoration: none;
+    font-weight: bold;
+}
